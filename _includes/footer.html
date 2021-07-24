@@ -16,11 +16,26 @@
             {%- endif -%}
           </li>
           {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
+          <li>
+            <a href="mailto:{{ site.email }}">
+              Email: {{ site.email}}
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.url2 }}">
+              {{ site.url2 }}
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.github_url }}">
+                {{ site.github_url }}
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/GoodmanPlanFan">
+                Twitter: {{ site.twitter_username }}
+            </a>
+          </li>
           {%- endif -%}
         </ul>
       </div>
@@ -29,12 +44,6 @@
       <div class="col-sm text-right">
         <p>{{- site.description | escape -}}</p>
 
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-        </p>
-        <p>
-          <a href="https://github.com/nicolas-van/bootstrap-4-github-pages"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nicolas-van/bootstrap-4-github-pages?style=social"></a>
-        <p>
       </div>
 
     </div>
